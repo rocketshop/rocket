@@ -14,12 +14,6 @@
         "mpociot/vat-calculator": "^2.2",
         "rocketshop/engine": "dev-master"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/rocketshop/engine"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "Rocket\\": "src/app"
