@@ -12,8 +12,14 @@
     "require": {
         "php": ">=7.0",
         "mpociot/vat-calculator": "^2.2",
-        "rocketshop/engine": "*@dev"
+        "rocketshop/engine": "dev-master"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rocketshop/engine"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Rocket\\": "src/app"
