@@ -1,0 +1,28 @@
+{
+    "name": "rocketshop/rocket",
+    "description": "Rocket provides a starter scaffolding for Laravel ecommerce applications.",
+    "keywords": ["laravel", "stripe", "billing", "scaffolding", "ecommerce"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joakim Johansson",
+            "email": "joakim.a.johansson@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "mpociot/vat-calculator": "^2.2",
+        "rocketshop/engine": "*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rocket\\": "src/app"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}
