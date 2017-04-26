@@ -1,7 +1,7 @@
 {
     "name": "rocketshop/rocket",
-    "description": "Rocket provides a starter scaffolding for Laravel ecommerce applications.",
-    "keywords": ["laravel", "stripe", "billing", "scaffolding", "ecommerce"],
+    "description": "",
+    "keywords": [""],
     "license": "MIT",
     "authors": [
         {
