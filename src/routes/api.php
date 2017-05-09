@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 use Illuminate\Http\Request;
 
@@ -13,7 +13,23 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('api')->get('/test', function (Request $request) {
-    return $request->user();
+Route::middleware('api')->get('/api/products', function (Request $request) {
+    $products = new Rocket\Fuel\Article\ArrayArticleRepository();
+
+    for($i = 0; $i < 10; $i++) {
+        $product = new Rocket\Fuel\Article\Article();
+
+        $product->fill([
+            'id'            => $i,
+            'product_id'    => $i,
+            'sku'           => dechex(rand()),
+            'name'          => 'product',
+            'description'   => 'lorem ipsum dolor sit amet.'
+        ]);
+
+        $products->add($product);
+    }
+    
+    return $products->getAll();
 });
 
