@@ -14,6 +14,8 @@ class RocketServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        \Route::pattern('id', '[0-9]+');
+
         $this->app->booted(function () {
             $this->defineRoutes();
         });

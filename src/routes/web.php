@@ -15,5 +15,12 @@ Route::middleware('web')->get('/', function () {
     $request = Request::create('/api/products', 'GET');
     $response = Route::dispatch($request);
 
-    return view('rocket::rocket', ['products' => $response->getOriginalContent()]);
+    return view('rocket::home', ['products' => $response->getOriginalContent()]);
+});
+
+Route::middleware('web')->get('/product/{id}', function ($id) {
+    $request = Request::create('/api/product/'.$id, 'GET');
+    $response = Route::dispatch($request);
+
+    return view('rocket::product', ['product' => $response->getOriginalContent()]);
 });
