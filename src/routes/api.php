@@ -15,10 +15,10 @@ use Illuminate\Http\Request;
 
 // ?filter[id]=1,2,3,4
 function filters($filters) {
-    foreach ($filters as $key => $filter) {
-        $filter = explode(',', $filter);
-        $filters[$key] = (object) $filter;
-    }
+//    foreach ($filters as $key => $filter) {
+//        $filter = explode(',', $filter);
+//        $filters[$key] = (object) $filter;
+//    }
 
     return (object) $filters;
 }
